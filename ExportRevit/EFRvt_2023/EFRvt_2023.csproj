@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A40F617-66DD-4672-9558-FD2C213C18F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFRvt</RootNamespace>
+    <AssemblyName>EFRvt_2023</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;REVIT2023</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>EFRvt_2023.addin</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cgCore">
+      <HintPath>..\BaseCode\Net\eFramerSharedDlls\cgCore.dll</HintPath>
+    </Reference>
+    <Reference Include="cgDebug">
+      <HintPath>..\BaseCode\Net\eFramerSharedDlls\cgDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="cgGeometry">
+      <HintPath>..\BaseCode\Net\eFramerSharedDlls\cgGeometry.dll</HintPath>
+    </Reference>
+    <Reference Include="efAppLauncher">
+      <HintPath>..\Analysis\Dlls\efAppLauncher.dll</HintPath>
+    </Reference>
+    <Reference Include="efRevitBase">
+      <HintPath>..\Analysis\Dlls\efRevitBase.dll</HintPath>
+    </Reference>
+    <Reference Include="efxTranslator">
+      <HintPath>..\Analysis\Dlls\efxTranslator.dll</HintPath>
+    </Reference>
+    <Reference Include="Elibre.Geometry2D, Version=1.0.6465.17460, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Elibre.Geometry2D.dll</HintPath>
+    </Reference>
+    <Reference Include="GlobalHelper">
+      <HintPath>..\Design\Dlls\GlobalHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RevitAPI, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Revit.RevitApi.x64.2023.0.0\lib\net48\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Revit.RevitApiUI.x64.2023.0.0\lib\net48\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EFRvt23.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EFRvt_2023.addin" />
+    <None Include="packages.config" />
+    <None Include="Revit\CommonTrussFamilies\DoubleFanTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\DoubleFinkTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\DoubleHoweTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\FinkTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\HoweTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\KingPostTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\ModifiedQueenTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\QueenPostTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\TripleFanTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\TripleFinkTruss.rfa" />
+    <None Include="Revit\CommonTrussFamilies\TripleHoweTruss.rfa" />
+    <None Include="Revit\DB\Door-Double-Flush_Panel.rfa" />
+    <None Include="Revit\DB\EFBeam.rfa" />
+    <None Include="Revit\DB\EFHeader.rfa" />
+    <None Include="Revit\DB\EFHorizontal_Ijoist.rfa" />
+    <None Include="Revit\DB\EFIjoist.rfa" />
+    <None Include="Revit\DB\EFJoist.rfa" />
+    <None Include="Revit\DB\EFPlate.rfa" />
+    <None Include="Revit\DB\EFRafter.rfa" />
+    <None Include="Revit\DB\EFRidgeBeam.rfa" />
+    <None Include="Revit\DB\EFSteelStrap.rfa" />
+    <None Include="Revit\DB\EFVoidPlate.rfa" />
+    <None Include="Revit\DB\EFWallOpening.0001.rfa" />
+    <None Include="Revit\DB\EFWallOpening.rfa" />
+    <None Include="Revit\DB\Footing-Rectangular.rfa" />
+    <None Include="Revit\DB\Holdown-Simpson_Strong_Tie-HD3B-3D.rfa" />
+    <None Include="Revit\DB\newStuds\EFPost.rfa" />
+    <None Include="Revit\DB\newStuds\EFPreManfactureWall.rfa" />
+    <None Include="Revit\DB\newStuds\EFWallPost.rfa" />
+    <None Include="Revit\DB\newStuds\EFWallStud.rfa" />
+    <None Include="Revit\DB\Single-Flush.0001.rfa" />
+    <None Include="Revit\DB\Single-Flush.rfa" />
+    <None Include="Revit\DB\Strap_Tie-Simpson_Strong_Tie-LSTA-3D.rfa" />
+    <None Include="Revit\DB\Studs\EFPost.rfa" />
+    <None Include="Revit\DB\Studs\EFStud.rfa" />
+    <None Include="Revit\DB\Studs\EFStud_CenterNew.rfa" />
+    <None Include="Revit\DB\Window-Casement-Double.0001.rfa" />
+    <None Include="Revit\DB\Window-Casement-Double.rfa" />
+    <None Include="Revit\FramingAreaOpenings\Generic Model.rft" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\DoubleFanTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\DoubleFinkTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\DoubleHoweTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\FinkTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\HoweTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\KingPostTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\ModifiedQueenTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\QueenPostTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\TripleFanTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\TripleFinkTruss.rfa" />
+    <None Include="Revit\GenericTrussess\CommonTrussFamilies\TripleHoweTruss.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFBeam.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFHeader.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFHorizontal_Ijoist.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFIjoist.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFJoist.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFPlate.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFRafter.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFRidgeBeam.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFSteelStrap.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFVoidPlate.rfa" />
+    <None Include="Revit\GenericTrussess\DB\EFWallOpening.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Footing-Rectangular.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Holdown-Simpson_Strong_Tie-HD3B-3D.rfa" />
+    <None Include="Revit\GenericTrussess\DB\newStuds\EFPost.rfa" />
+    <None Include="Revit\GenericTrussess\DB\newStuds\EFPreManfactureWall.rfa" />
+    <None Include="Revit\GenericTrussess\DB\newStuds\EFWallPost.rfa" />
+    <None Include="Revit\GenericTrussess\DB\newStuds\EFWallStud.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Strap_Tie-Simpson_Strong_Tie-LSTA-3D.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Studs\EFPost.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Studs\EFStud.rfa" />
+    <None Include="Revit\GenericTrussess\DB\Studs\EFStud_CenterNew.rfa" />
+    <None Include="Revit\GenericTrussess\FramingAreaOpenings\Generic Model.rft" />
+    <None Include="Revit\GenericTrussess\Generic Model Adaptive.rft" />
+    <None Include="Revit\GenericTrussess\Generic Model.rft" />
+    <None Include="Revit\GenericTrussess\GenericTrussess\Generic Model Adaptive.rft" />
+    <None Include="Revit\GenericTrussess\GenericTrussess\Generic Model.rft" />
+    <None Include="Revit\GenericTrussess\Templates\baseTemplate.rte" />
+    <None Include="Revit\Templates\baseTemplate.rte" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Revit\GenericTrussess\Images\import.ico" />
+    <Content Include="Revit\Images\import.ico" />
+  </ItemGroup>
+  <Import Project="..\EFRvt\EFRvt.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if exist "$(AppData)\Autodesk\REVIT\Addins\2023" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2023"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2023"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\2023"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\2023\EFRvt"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2023" xcopy "$(ProjectDir)Revit\*.*" "$(AppData)\Autodesk\REVIT\Addins\2023\Revit" /S /Y /I /E
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>EF Structure</Name>
+		<Description>Structure Generation</Description>
+		<Assembly>.\EFRvt_2023.dll</Assembly>
+		<FullClassName>EFRvt.MainApplicationCommand</FullClassName>
+		<ClientId>
+			D6F030AD-01D4-49DE-B423-D360DEF5EA07
+		</ClientId>
+		<VendorId>TBC_</VendorId>
+		<VendorDescription>EF</VendorDescription>
+	</AddIn>
+</RevitAddIns>

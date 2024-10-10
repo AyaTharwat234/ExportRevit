@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExportRevit", "ExportRevit\ExportRevit.shproj", "{FE0DE4D3-8293-4670-B6E7-5FC0F411CF3D}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6B83F0D-25AF-4A4B-88DB-F65925D86929}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ExportRevit\ExportRevit.projitems*{fe0de4d3-8293-4670-b6e7-5fc0f411cf3d}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

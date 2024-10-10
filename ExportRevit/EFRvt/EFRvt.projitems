@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>29c81c92-3a43-454b-86a1-c0f8b59ca372</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EFRvt</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Creator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ElementGeom\GeomUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ElementGeom\ObjectGeometry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\EFBuilding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\EFFloor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\EFObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\ElevationSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\ElevationSelector.Designer.cs">
+      <DependentUpon>ElevationSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\ExportingConfigrationFrm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\ExportingConfigrationFrm.Designer.cs">
+      <DependentUpon>ExportingConfigrationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\ExtensionMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\FloorInfoComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\FloorInfoComponent.Designer.cs">
+      <DependentUpon>FloorInfoComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\levelsDrawer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\levelsDrawer.Designer.cs">
+      <DependentUpon>levelsDrawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\PickFloorForm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\PickFloorForm.Designer.cs">
+      <DependentUpon>PickFloorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\primaryFloorInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExportClasses\primaryFloorInput.Designer.cs">
+      <DependentUpon>primaryFloorInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExportCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)frmImportfromEF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)frmImportfromEF.designer.cs">
+      <DependentUpon>frmImportfromEF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)frmMain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GeneralCreator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClassesShellModel\MapShellBuilding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClassesShellModel\MapShellFloor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClassesShellModel\MapShellObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClasses\MapBuilding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClasses\MapFloor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportClasses\MapObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImportCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LevelCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MathTools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NodesNames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\Resources.Designer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitToEfx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitToElibre.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoofGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoofLine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RunEF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Externals\Elibre.Geometry2D.dll" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\EFRvt2020.rvt" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\EFRvt2021.rvt" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\EFRvt2022 - Copy.rvt" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\EFRvt2023.rvt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\ElevationSelector.resx">
+      <DependentUpon>ElevationSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\ExportingConfigrationFrm.resx">
+      <DependentUpon>ExportingConfigrationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\FloorInfoComponent.resx">
+      <DependentUpon>FloorInfoComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\levelsDrawer.resx">
+      <DependentUpon>levelsDrawer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\PickFloorForm.resx">
+      <DependentUpon>PickFloorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportClasses\primaryFloorInput.resx">
+      <DependentUpon>primaryFloorInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\delete.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Export.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Import.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\reload.png" />
+  </ItemGroup>
+</Project>
